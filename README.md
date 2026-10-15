@@ -1,66 +1,53 @@
-**FORMA — Mini E-Commerce Store**
+# FORMA — Mini E-Commerce Store
 
-A responsive mini e-commerce application built with React and Vite. FORMA showcases everyday products across four categories through a clean, modern shopping interface.
+FORMA is a modern, responsive mini e-commerce web application built with React. It provides a clean shopping experience where users can browse products, filter by category, search for items, view product details, and manage a shopping cart.
 
-**Features**
+## Features
 
-- **Product Listing:** Browse 60 products across Home, Accessories, Workspace, and Technology.
-- **Search:** Search products by name, category, or description.
-- **Category Filtering:** Filter products by category.
-- **Product Details:** View individual product information on dedicated pages.
-- **Shopping Cart:** Add products, remove items, and increase or decrease quantities.
-- **Cart Summary:** View the total number of items and calculate the subtotal.
-- **Persistent Cart:** Cart contents are saved in the browser using localStorage.
-- **Responsive Design:** Layout adapts to desktop, tablet, and mobile screens.
-- **Empty States:** Helpful messages are displayed when no products match a search or the cart is empty.
-- **Image Fallbacks:** Placeholder images are displayed when product images fail to load.
+- **Product Catalogue:** Browse products across Home, Accessories, Workspace, and Technology categories.
+- **Category Filtering:** Filter products by their category.
+- **Product Search:** Search products by name, category, or description.
+- **Product Details:** View individual product information, including images, descriptions, ratings, and prices.
+- **Shopping Cart:** Add products to the cart, update quantities, and remove items.
+- **Cart Summary:** View the total number of items and the order subtotal.
+- **Persistent Cart:** Cart items are saved in the browser using localStorage, so they remain available after refreshing the page.
+- **Responsive Design:** Interface adapts to desktop, tablet, and mobile screen sizes.
+- **Navigation:** Navigate between the shop, product details, and cart pages.
+- **Fallback Images:** Display a placeholder when a product image fails to load.
+- **Demo Checkout:** Demonstrate the checkout interaction without processing real payments.
 
-**Tech Stack**
+## Tech Stack
 
-- React
-- Vite
-- JavaScript
-- React Router DOM
-- CSS
-- JSON for local product data
-- Browser localStorage for cart persistence
+- **React** — UI development
+- **Vite** — Development server and build tool
+- **React Router** — Client-side navigation
+- **JavaScript (ES6+)** — Application logic
+- **CSS3** — Styling and responsive layouts
+- **JSON** — Local product data
+- **localStorage** — Cart persistence
 
-**Project Structure**
+## Getting Started
 
-```text
-forma-store/
-├── public/
-├── src/
-│   ├── context/
-│   │   └── CartContext.jsx
-│   ├── data/
-│   │   └── products.json
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-├── index.html
-├── package.json
-├── package-lock.json
-└── README.md
-```
+### Prerequisites
 
-**Getting Started**
+Install the following before running the application:
 
-**Prerequisites**
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- npm (included with Node.js)
+- [Git](https://git-scm.com/) (optional, for cloning the repository)
 
-Install Node.js and npm before running the application.
+### Installation
 
 **1. Clone the repository**
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/RutikKadam06/forma-mini-ecommerce.git
 ```
 
 **2. Navigate to the project directory**
 
 ```bash
-cd forma-store
+cd forma-mini-ecommerce
 ```
 
 **3. Install dependencies**
@@ -75,44 +62,124 @@ npm install
 npm run dev
 ```
 
-Open the local URL displayed in your terminal to view the application.
+**5. Open the application**
 
-**How to Use**
+Open the local URL displayed in your terminal, usually:
 
-1. Browse the products on the home page.
-2. Use the search bar or category filters to find products.
-3. Select a product to view its details.
-4. Click the **+** button to add a product to your bag.
-5. Open the bag to manage quantities or remove products.
-6. Review the item count and subtotal.
-7. Refresh the page to verify that the cart persists.
+```text
+http://localhost:5173
+```
 
-**Product Data**
+## Available Scripts
 
-Product information is stored locally in `src/data/products.json`. Each product contains an ID, name, category, price, rating, image URL, and description.
+| Command | Description |
+|---|---|
+| `npm run dev` | Starts the Vite development server |
+| `npm run build` | Creates a production build |
+| `npm run preview` | Previews the production build locally |
 
-The application uses local JSON data and does not require a backend server or external product API.
+## Project Structure
 
-**Cart Persistence**
+```text
+forma-mini-ecommerce/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── CartItem.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductImage.jsx
+│   │   └── QuantityControl.jsx
+│   ├── context/
+│   │   └── CartContext.jsx
+│   ├── data/
+│   │   └── products.json
+│   ├── hooks/
+│   │   └── useCart.js
+│   ├── pages/
+│   │   ├── CartPage.jsx
+│   │   ├── NotFoundPage.jsx
+│   │   ├── ProductPage.jsx
+│   │   └── ShopPage.jsx
+│   ├── utils/
+│   │   └── formatPrice.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+└── README.md
+```
 
-The shopping cart is managed using React Context and React state. Cart contents are stored in the browser's localStorage, allowing them to remain available after a page refresh in the same browser.
+## Application Routes
 
-**Checkout**
+| Route | Description |
+|---|---|
+| `/` | Main shop page with product catalogue, search, and category filters |
+| `/products/:id` | Individual product details page |
+| `/cart` | Shopping cart and order summary |
+| Other routes | Not-found page |
 
-Checkout is currently a demonstration feature. No real payment processing, order placement, or backend checkout service is implemented.
+## Product Data
 
-**Future Improvements**
+Product information is stored locally in `src/data/products.json`. Each product includes fields such as:
 
-- Add sorting by price and rating.
-- Improve image loading with local product assets.
-- Add product availability and stock validation.
-- Implement a real checkout flow and order management.
-- Add automated tests for cart and filtering functionality.
+- `id`
+- `name`
+- `category`
+- `price`
+- `rating`
+- `image`
+- `description`
 
-**Author**
+The application uses this data to display products, filter search results, render product details, and calculate cart totals.
 
-Developed as a React Developer Intern take-home assessment.
+## Cart Functionality
 
-**License**
+The shopping cart is managed using React Context, allowing cart state to be shared across components.
 
-This project was created for demonstration and assessment purposes.
+Users can:
+
+- Add products to the cart.
+- Increase or decrease product quantities.
+- Remove products.
+- Clear the cart.
+- View the item count and subtotal.
+- Retain cart data across page refreshes through browser localStorage.
+
+## Checkout
+
+The checkout feature is a demonstration interaction. It does not process real payments, create orders on a server, or require a payment gateway.
+
+## Running a Production Build
+
+To check whether the application builds successfully, run:
+
+```bash
+npm run build
+```
+
+To preview the production build locally, run:
+
+```bash
+npm run preview
+```
+
+## Limitations
+
+- Product data is stored locally rather than retrieved from a backend API.
+- Cart persistence is browser-specific and uses localStorage.
+- User authentication and account management are not implemented.
+- Checkout is for demonstration purposes only.
+- Product image availability depends on the configured image URLs.
+
+## Repository
+
+GitHub: https://github.com/RutikKadam06/forma-mini-ecommerce
+
+---
+
+**FORMA** — Thoughtfully selected products. A simple shopping experience.
