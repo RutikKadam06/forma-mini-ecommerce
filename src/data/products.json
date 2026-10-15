@@ -1,0 +1,534 @@
+[
+  {
+    "id": 1,
+    "name": "Everyday Ceramic Mug",
+    "category": "Home",
+    "price": 399,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600",
+    "description": "A handcrafted ceramic mug with a comfortable handle, perfect for your daily coffee or tea."
+  },
+  {
+    "id": 2,
+    "name": "Cloud Knit Throw",
+    "category": "Home",
+    "price": 1899,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600",
+    "description": "A soft knitted throw that adds warmth, texture, and comfort to your living space."
+  },
+  {
+    "id": 3,
+    "name": "Stoneware Vase",
+    "category": "Home",
+    "price": 1299,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=600",
+    "description": "A sculptural stoneware vase designed to complement fresh flowers or stand beautifully on its own."
+  },
+  {
+    "id": 4,
+    "name": "Linen Cushion Cover",
+    "category": "Home",
+    "price": 699,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=600",
+    "description": "A breathable linen cushion cover that brings understated elegance to sofas and beds."
+  },
+  {
+    "id": 5,
+    "name": "Oak Serving Board",
+    "category": "Home",
+    "price": 999,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600",
+    "description": "A durable wooden serving board for presenting snacks, cheese, and small meals."
+  },
+  {
+    "id": 6,
+    "name": "Amber Scented Candle",
+    "category": "Home",
+    "price": 549,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=600",
+    "description": "A fragrant candle with warm amber notes that creates a relaxing atmosphere at home."
+  },
+  {
+    "id": 7,
+    "name": "Ribbed Glass Set",
+    "category": "Home",
+    "price": 799,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?w=600",
+    "description": "A set of ribbed drinking glasses with a textured finish for everyday refreshments."
+  },
+  {
+    "id": 8,
+    "name": "Woven Storage Basket",
+    "category": "Home",
+    "price": 1099,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1593085260707-5377ba37f868?w=600",
+    "description": "A woven basket that keeps blankets, magazines, and household essentials neatly organised."
+  },
+  {
+    "id": 9,
+    "name": "Cotton Bath Towel",
+    "category": "Home",
+    "price": 599,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1600369671236-e74521d4b6ad?w=600",
+    "description": "A soft cotton bath towel designed for everyday comfort and absorbency."
+  },
+  {
+    "id": 10,
+    "name": "Terracotta Planter",
+    "category": "Home",
+    "price": 449,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600",
+    "description": "A terracotta planter that gives indoor plants a natural home and a warm decorative touch."
+  },
+  {
+    "id": 11,
+    "name": "Walnut Photo Frame",
+    "category": "Home",
+    "price": 649,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600",
+    "description": "A minimalist photo frame with a walnut-inspired finish for displaying your favourite memories."
+  },
+  {
+    "id": 12,
+    "name": "Pleated Table Lamp",
+    "category": "Home",
+    "price": 2199,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600",
+    "description": "A decorative table lamp that provides gentle ambient lighting for bedrooms and reading corners."
+  },
+  {
+    "id": 13,
+    "name": "Minimal Wall Clock",
+    "category": "Home",
+    "price": 1499,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=600",
+    "description": "A clean-faced wall clock that combines practical timekeeping with understated design."
+  },
+  {
+    "id": 14,
+    "name": "Cotton Table Runner",
+    "category": "Home",
+    "price": 749,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?w=600",
+    "description": "A woven cotton table runner that adds a simple decorative layer to dining tables."
+  },
+  {
+    "id": 15,
+    "name": "Ceramic Serving Bowl",
+    "category": "Home",
+    "price": 899,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=600",
+    "description": "A versatile ceramic bowl for serving salads, fruit, snacks, and shared dishes."
+  },
+  {
+    "id": 16,
+    "name": "Daily Carry Tote",
+    "category": "Accessories",
+    "price": 899,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600",
+    "description": "A roomy everyday tote designed to carry books, groceries, and daily essentials."
+  },
+  {
+    "id": 17,
+    "name": "Insulated Steel Bottle",
+    "category": "Accessories",
+    "price": 1199,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600",
+    "description": "A reusable stainless steel bottle designed to keep drinks at a comfortable temperature."
+  },
+  {
+    "id": 18,
+    "name": "Compact Card Holder",
+    "category": "Accessories",
+    "price": 499,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=600",
+    "description": "A slim card holder for carrying essential cards without the bulk of a traditional wallet."
+  },
+  {
+    "id": 19,
+    "name": "Classic Canvas Cap",
+    "category": "Accessories",
+    "price": 599,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600",
+    "description": "A versatile canvas cap with an adjustable fit for casual outings and outdoor activities."
+  },
+  {
+    "id": 20,
+    "name": "Travel Toiletry Pouch",
+    "category": "Accessories",
+    "price": 749,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=600",
+    "description": "A compact travel pouch that keeps toiletries and personal-care products organised."
+  },
+  {
+    "id": 21,
+    "name": "Ribbed Knit Beanie",
+    "category": "Accessories",
+    "price": 699,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=600",
+    "description": "A ribbed knit beanie that adds warmth and a relaxed finish to cold-weather outfits."
+  },
+  {
+    "id": 22,
+    "name": "Everyday Crossbody Bag",
+    "category": "Accessories",
+    "price": 1599,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600",
+    "description": "A compact crossbody bag with convenient storage for your phone, wallet, and essentials."
+  },
+  {
+    "id": 23,
+    "name": "Brushed Metal Key Ring",
+    "category": "Accessories",
+    "price": 299,
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600",
+    "description": "A simple metal key ring that keeps your keys together in a neat, durable design."
+  },
+  {
+    "id": 24,
+    "name": "Foldable Shopping Bag",
+    "category": "Accessories",
+    "price": 349,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600",
+    "description": "A lightweight reusable shopping bag that folds into a compact size when not in use."
+  },
+  {
+    "id": 25,
+    "name": "Retro Frame Sunglasses",
+    "category": "Accessories",
+    "price": 999,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600",
+    "description": "Retro-inspired sunglasses that complete casual outfits with a timeless silhouette."
+  },
+  {
+    "id": 26,
+    "name": "Travel Passport Wallet",
+    "category": "Accessories",
+    "price": 799,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600",
+    "description": "A travel organiser designed to keep your passport, cards, and travel documents together."
+  },
+  {
+    "id": 27,
+    "name": "Classic Everyday Belt",
+    "category": "Accessories",
+    "price": 899,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1624222247344-550fb8d4e3c1?w=600",
+    "description": "A versatile belt with a classic buckle that pairs easily with everyday outfits."
+  },
+  {
+    "id": 28,
+    "name": "Weekend Duffel Bag",
+    "category": "Accessories",
+    "price": 2499,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600",
+    "description": "A spacious duffel bag for short trips, gym sessions, and weekend adventures."
+  },
+  {
+    "id": 29,
+    "name": "Minimal Hoop Earrings",
+    "category": "Accessories",
+    "price": 649,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600",
+    "description": "Lightweight hoop earrings with a simple silhouette for everyday styling."
+  },
+  {
+    "id": 30,
+    "name": "Woven Bucket Hat",
+    "category": "Accessories",
+    "price": 799,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=600",
+    "description": "A relaxed bucket hat that adds casual character to warm-weather outfits."
+  },
+  {
+    "id": 31,
+    "name": "Minimal Desk Lamp",
+    "category": "Workspace",
+    "price": 1799,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600",
+    "description": "A focused desk lamp designed to provide practical lighting for reading and working."
+  },
+  {
+    "id": 32,
+    "name": "Linen Notebook Set",
+    "category": "Workspace",
+    "price": 599,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=600",
+    "description": "A set of notebooks with textured covers for planning, journaling, and capturing ideas."
+  },
+  {
+    "id": 33,
+    "name": "Wooden Desk Organizer",
+    "category": "Workspace",
+    "price": 1299,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600",
+    "description": "A wooden organiser with dedicated spaces for stationery and small desk accessories."
+  },
+  {
+    "id": 34,
+    "name": "Soft Cover Journal",
+    "category": "Workspace",
+    "price": 449,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600",
+    "description": "A flexible-cover journal for daily reflections, notes, sketches, and personal ideas."
+  },
+  {
+    "id": 35,
+    "name": "Ergonomic Mouse Pad",
+    "category": "Workspace",
+    "price": 499,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=600",
+    "description": "A smooth mouse pad with a supportive wrist area for comfortable desk use."
+  },
+  {
+    "id": 36,
+    "name": "Precision Metal Pen Set",
+    "category": "Workspace",
+    "price": 699,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=600",
+    "description": "A coordinated set of metal pens for writing neatly at home, school, or work."
+  },
+  {
+    "id": 37,
+    "name": "Adjustable Laptop Stand",
+    "category": "Workspace",
+    "price": 1499,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600",
+    "description": "An adjustable laptop stand that raises your screen to support a more comfortable workstation."
+  },
+  {
+    "id": 38,
+    "name": "Perpetual Desk Calendar",
+    "category": "Workspace",
+    "price": 899,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600",
+    "description": "A reusable desk calendar that makes it easy to keep dates visible while you work."
+  },
+  {
+    "id": 39,
+    "name": "Cable Tidy Kit",
+    "category": "Workspace",
+    "price": 299,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+    "description": "A practical cable management kit for keeping charging and computer cables organised."
+  },
+  {
+    "id": 40,
+    "name": "Felt Desk Mat",
+    "category": "Workspace",
+    "price": 999,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600",
+    "description": "A felt desk mat that creates a comfortable writing surface and protects your desktop."
+  },
+  {
+    "id": 41,
+    "name": "Colour Block Sticky Notes",
+    "category": "Workspace",
+    "price": 249,
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?w=600",
+    "description": "A colourful set of sticky notes for reminders, quick lists, and marking important pages."
+  },
+  {
+    "id": 42,
+    "name": "Adjustable Book Stand",
+    "category": "Workspace",
+    "price": 799,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600",
+    "description": "A sturdy book stand that holds reading material at a convenient angle on your desk."
+  },
+  {
+    "id": 43,
+    "name": "Compact USB Hub",
+    "category": "Workspace",
+    "price": 1199,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=600",
+    "description": "A compact USB hub that expands connectivity for compatible laptops and desktop computers."
+  },
+  {
+    "id": 44,
+    "name": "Glass Water Carafe",
+    "category": "Workspace",
+    "price": 849,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?w=600",
+    "description": "A glass carafe that keeps water close at hand during focused work sessions."
+  },
+  {
+    "id": 45,
+    "name": "Daily Task Planner Pad",
+    "category": "Workspace",
+    "price": 399,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600",
+    "description": "A tear-off planner pad with space for priorities, tasks, and notes throughout the day."
+  },
+  {
+    "id": 46,
+    "name": "Studio Over-Ear Headphones",
+    "category": "Technology",
+    "price": 3499,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600",
+    "description": "Over-ear headphones designed for immersive listening, music sessions, and everyday entertainment."
+  },
+  {
+    "id": 47,
+    "name": "Wireless Earbuds",
+    "category": "Technology",
+    "price": 2299,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=600",
+    "description": "Compact wireless earbuds for listening to music and taking calls while on the move."
+  },
+  {
+    "id": 48,
+    "name": "Portable Bluetooth Speaker",
+    "category": "Technology",
+    "price": 1999,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600",
+    "description": "A portable speaker for enjoying music at home, outdoors, and during small gatherings."
+  },
+  
+  {
+    "id": 50,
+    "name": "Smart LED Bulb",
+    "category": "Technology",
+    "price": 699,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600",
+    "description": "A smart LED bulb that can support convenient lighting control with a compatible setup."
+  },
+  {
+    "id": 51,
+    "name": "Compact Power Bank",
+    "category": "Technology",
+    "price": 1599,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600",
+    "description": "A portable power bank for charging compatible devices when a wall outlet is unavailable."
+  },
+  {
+    "id": 52,
+    "name": "Mechanical Keyboard",
+    "category": "Technology",
+    "price": 3999,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600",
+    "description": "A mechanical keyboard designed for responsive typing during work, study, and gaming."
+  },
+  {
+    "id": 53,
+    "name": "Wireless Precision Mouse",
+    "category": "Technology",
+    "price": 1299,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600",
+    "description": "A wireless mouse with a comfortable shape for navigating documents and everyday applications."
+  },
+  {
+    "id": 54,
+    "name": "Full HD Webcam",
+    "category": "Technology",
+    "price": 2499,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da?w=600",
+    "description": "A webcam for video meetings, online classes, and remote collaboration on compatible computers."
+  },
+  {
+    "id": 55,
+    "name": "USB-C Cable Set",
+    "category": "Technology",
+    "price": 499,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+    "description": "A set of USB-C cables for charging and data transfer with compatible devices."
+  },
+  {
+    "id": 56,
+    "name": "Protective Laptop Sleeve",
+    "category": "Technology",
+    "price": 999,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600",
+    "description": "A padded laptop sleeve designed to help protect your computer from everyday scratches and scuffs."
+  },
+  {
+    "id": 57,
+    "name": "Digital Alarm Clock",
+    "category": "Technology",
+    "price": 1099,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=600",
+    "description": "A digital alarm clock with a clear display for keeping track of time on your bedside table."
+  },
+  {
+    "id": 58,
+    "name": "Adjustable Phone Stand",
+    "category": "Technology",
+    "price": 599,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=600",
+    "description": "An adjustable phone stand for video calls, watching content, and keeping your phone accessible."
+  },
+  {
+    "id": 59,
+    "name": "Wi-Fi Smart Plug",
+    "category": "Technology",
+    "price": 999,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=600",
+    "description": "A smart plug for controlling compatible appliances through a supported smart-home setup."
+  },
+  {
+    "id": 60,
+    "name": "Flexible Action Camera Tripod",
+    "category": "Technology",
+    "price": 899,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600",
+    "description": "A compact flexible tripod for positioning compatible cameras during travel and content creation."
+  }
+]
