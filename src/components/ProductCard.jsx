@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../hooks/useCart";
 import ProductImage from "./ProductImage";
-import formatPrice from "../utils/formatPrice";
+import { formatPrice } from "../utils/formatPrice";
 
 export default function ProductCard({ product, returnTo = "/" }) {
   const { addToCart, cartItems } = useCart();

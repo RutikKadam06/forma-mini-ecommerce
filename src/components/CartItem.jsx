@@ -1,7 +1,7 @@
 
 import ProductImage from "./ProductImage";
 import QuantityControl from "./QuantityControl";
-import formatPrice from "../utils/formatPrice";
+import { formatPrice } from "../utils/formatPrice";
 
 export default function CartItem({
   item,

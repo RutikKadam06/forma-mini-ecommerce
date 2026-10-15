@@ -3,8 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../hooks/useCart";
 import CartItem from "../components/CartItem";
-import formatPrice from "../utils/formatPrice";
-
+import { formatPrice } from "../utils/formatPrice";
 export default function CartPage() {
   const {
     cartItems,

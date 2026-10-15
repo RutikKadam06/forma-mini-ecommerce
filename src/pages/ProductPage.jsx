@@ -1,59 +1,57 @@
 
-import {
-  Link,
-  useLocation,
-  useNavigate,
-  useParams,
-} from "react-router-dom";
+import { useState } from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
 import products from "../data/products.json";
-import { useCart } from "../hooks/useCart";
 import ProductImage from "../components/ProductImage";
-import formatPrice from "../utils/formatPrice";
+import { useCart } from "../hooks/useCart";
+import { formatPrice } from "../utils/formatPrice";
 
 export default function ProductPage() {
   const { id } = useParams();
   const location = useLocation();
-  const navigate = useNavigate();
-  const { addToCart, cartItems } = useCart();
+  const { addToCart, lastAddedId } = useCart();
+  const [quantity, setQuantity] = useState(1);
 
-  const product = products.find(
-    (item) => String(item.id) === String(id)
-  );
-
+  const product = products.find((item) => String(item.id) === String(id));
   const returnTo = location.state?.returnTo || "/";
+  const added = lastAddedId === product?.id;
 
   if (!product) {
     return (
-      <main className="page-content empty-state">
-        <h1>Product not found</h1>
-        <p>The product may have been removed or the URL is incorrect.</p>
-        <Link to="/" className="primary-button">
-          Return to shop
-        </Link>
+      <main className="page-content">
+        <div className="empty-state">
+          <h2>Product not found</h2>
+          <Link to="/" className="primary-button">
+            Back to shop
+          </Link>
+        </div>
       </main>
     );
   }
 
-  const cartItem = cartItems.find(
-    (item) => String(item.id) === String(product.id)
-  );
+  const decreaseQuantity = () => {
+    setQuantity((current) => Math.max(1, current - 1));
+  };
+
+  const increaseQuantity = () => {
+    setQuantity((current) => current + 1);
+  };
+
+  const handleAddToCart = () => {
+    for (let i = 0; i < quantity; i += 1) {
+      addToCart(product);
+    }
+  };
 
   return (
-    <main className="page-content">
-      <button
-        type="button"
-        className="back-button"
-        onClick={() => navigate(returnTo)}
-      >
-        ← Back to results
-      </button>
+    <main className="page-content product-detail-page">
+      <Link to={returnTo} className="back-button">
+        ← Back to shop
+      </Link>
 
       <section className="product-detail">
         <div className="detail-image-container">
-          <ProductImage
-            src={product.image}
-            alt={product.name}
-          />
+          <ProductImage product={product} />
         </div>
 
         <div className="detail-information">
@@ -61,32 +59,53 @@ export default function ProductPage() {
 
           <h1>{product.name}</h1>
 
-          <p className="detail-rating">
-            ★ {Number(product.rating || 0).toFixed(1)}
-          </p>
+          <p className="detail-rating">★ {product.rating}</p>
 
-          <p className="detail-price">
-            {formatPrice(product.price)}
-          </p>
+          <p className="detail-price">{formatPrice(product.price)}</p>
 
-          <p className="detail-description">
-            {product.description || "A thoughtfully chosen everyday essential."}
-          </p>
+          <p className="detail-description">{product.description}</p>
+
+          <div className="detail-quantity-section">
+            <span className="detail-quantity-label">Quantity</span>
+
+            <div
+              className="quantity-control detail-quantity-control"
+              aria-label="Select product quantity"
+            >
+              <button
+                type="button"
+                onClick={decreaseQuantity}
+                disabled={quantity <= 1}
+                aria-label="Decrease quantity"
+              >
+                −
+              </button>
+
+              <span aria-live="polite">{quantity}</span>
+
+              <button
+                type="button"
+                onClick={increaseQuantity}
+                aria-label="Increase quantity"
+              >
+                +
+              </button>
+            </div>
+          </div>
 
           <button
             type="button"
             className="primary-button detail-add-button"
-            onClick={() => addToCart(product)}
+            onClick={handleAddToCart}
           >
-            Add to bag
-            {cartItem ? ` (${cartItem.quantity} in bag)` : ""}
+            {added ? "Add more to bag" : "Add to bag"} ({quantity})
           </button>
 
           <p className="detail-note">
             Your bag updates instantly. Items remain saved in this browser.
           </p>
 
-          <Link to="/cart" className="continue-shopping">
+          <Link to="/cart" className="view-bag-link">
             View bag
           </Link>
         </div>
